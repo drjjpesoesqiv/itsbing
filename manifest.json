@@ -1,0 +1,19 @@
+{
+  "author": "jpeso",
+  "manifest_version": 2,
+  "name": "itsbing",
+  "version": "1.0",
+
+  "description": "Reminds you that you're using bing.",
+
+  "icons": {
+    "40": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.bing.com/*"],
+      "js": ["itsbing.js"]
+    }
+  ]
+}
